@@ -12,9 +12,9 @@ public class ArrayConverter {
 	private static final Logger log = LogManager.getLogger();
 	int [] wynik[];
     public int[] convertToInts(String[] strings) {
-    	log.debug("convertToInts starting with parameters: ", Arrays.toString(strings));
+    	log.debug("convertToInts starting with parameters: [args={}]", Arrays.toString(strings));
     	int wynik[] = Arrays.stream(strings).mapToInt(Integer::valueOf).toArray();
-    	log.debug("convertToInts exiting with : ", Arrays.toString(wynik));
+    	log.debug("convertToInts exiting with : [args={}]", Arrays.toString(wynik));
         return wynik;
     }
 }
